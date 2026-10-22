@@ -34,7 +34,7 @@ claude-code-rules/
 | Section | Purpose |
 |---|---|
 | Task size | Small tasks stay lightweight; full process only for large ones |
-| Precedence | User > project file > §2 and §7 > skills/plugins > other rules; "ask first" with no user means blocked |
+| Precedence | User > project file > §2 and §7 > rest of these rules > skills/plugins; "ask first" with no user means blocked |
 | §1 Understand | Read code before claiming a cause; investigate before asking |
 | §2 No shortcuts | No hardcoding, no silenced failures, no edits to guardrail config |
 | §3 Simplicity | Minimum code, but simple never means shortcut |

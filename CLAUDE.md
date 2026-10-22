@@ -19,9 +19,9 @@ Topic rules in `~/.claude/rules/` load with this file; each states when it appli
 
 1. The user's explicit instruction in this conversation.
 2. Project-level CLAUDE.md.
-3. §2 (No Shortcuts) and §7 (Evidence) of this file. Skills and plugins never override these.
-4. Skills and plugins: follow them for domain how-to, but adapt their templates to the project's existing structure (§4).
-5. The rest of this file and `rules/`.
+3. §2 (No Shortcuts) and §7 (Evidence) of this file.
+4. The rest of this file and `rules/`.
+5. Skills and plugins, including working-style plugins such as ponytail: follow them where they don't conflict with the above, and adapt their templates to the project's existing structure (§4).
 
 When a rule says "ask first" and no user is available (loop, schedule, unattended run), treat the action as blocked: stop and report.
 

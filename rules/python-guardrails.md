@@ -6,7 +6,7 @@ Use only for a large task in a project meant to last: a git repo with `pyproject
 
 Ask once per project (if declined, don't ask again there): "This project has no check command. Set up ruff + pytest guardrails?" On yes:
 
-1. Detect the package manager (`uv.lock` → uv, `poetry.lock` → poetry, else pip). Add tools as **dev dependencies only**:
+1. Detect the package manager (`uv.lock` → uv, `poetry.lock` → poetry, else pip). Add tools as **dev dependencies only**. Once the user approves, this is an allowed exception to any "don't add dependencies" rule from skills or plugins:
    - Always: `ruff`, `pytest`
    - Multiple packages/layers or >~20 modules: `mypy`, `import-linter`
    - Non-trivial logic (parsing, math, data transforms): `hypothesis`
